@@ -166,10 +166,10 @@
         function mouseEnterHandler() {
             const currentUser = users[this.dataset.userNumber];
 
-            let message = `Company ${currentUser.company} <br />` 
-             message += `Email ${currentUser.email} <br />` 
-             message += `Age ${currentUser.age} <br />` 
-             message += `Balance ${currentUser.balance} <br />` 
+            let message = `Company: ${currentUser.company} <br />` 
+             message += `Email: ${currentUser.email} <br />` 
+             message += `Age: ${currentUser.age} <br />` 
+             message += `Balance: ${currentUser.balance} <br />` 
 
              document.querySelector('#output').innerHTML = message;
         }
