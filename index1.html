@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #colorOutput {
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="colorOutput"></div>
+
+    <script>
+      /*
+        Завдання:
+        Зробіть так, щоб під час натискання на клавішу G фон div#colorOutput ставав зеленим,
+        під час натискання на клавішу R фон div#colorOutput ставав червоним,
+        а під час натискання на клавішу B фон div # color Output ставав синім.
+        */
+      let div = document.querySelector("div");
+
+      div.addEventListener("keydown", function (e) {
+        if (e.code === "KeyR") {
+          div.style.backgroundColor = "red";
+        } else if (e.code === "KeyG") {
+          div.style.backgroundColor = "green";
+        } else if (e.code === "KeyB") {
+          div.style.backgroundColor = "blue";
+        }
+      });
+    </script>
+  </body>
+</html>
