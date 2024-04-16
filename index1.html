@@ -12,7 +12,7 @@
     </style>
   </head>
   <body>
-    <div id="colorOutput"></div>
+    <div id = "colorOutput"></div>
 
     <script>
       /*
@@ -23,7 +23,7 @@
         */
       let div = document.querySelector("div");
 
-      div.addEventListener("keydown", function (e) {
+      document.addEventListener("keydown", function (e) {
         if (e.code === "KeyR") {
           div.style.backgroundColor = "red";
         } else if (e.code === "KeyG") {
@@ -31,7 +31,7 @@
         } else if (e.code === "KeyB") {
           div.style.backgroundColor = "blue";
         }
-    });
+      });
     </script>
   </body>
 </html>
